@@ -8,6 +8,6 @@ Contributions welcome! Here's what needs to be done:
 3. Add the API docs at the bottom of the page
 4. Make it all look pretty and cross-device friendly 😊
 
-![purgatory_1](https://github.com/ahanna334/password-purgatory/blob/main/photo_1.png)
+![purgatory_1](https://github.com/ahanna334/password-purgatory/blob/main/example_1.png)
 
-![purgatory_2](https://github.com/ahanna334/password-purgatory/blob/main/photo_2.jpg)
+![purgatory_2](https://github.com/ahanna334/password-purgatory/blob/main/example_2.png)
