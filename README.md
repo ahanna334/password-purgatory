@@ -10,4 +10,4 @@ Contributions welcome! Here's what needs to be done:
 
 ![purgatory_1](https://github.com/ahanna334/password-purgatory/blob/main/example_1.png)
 
-![purgatory_2](https://github.com/ahanna334/password-purgatory/blob/main/example_2.png)
+![purgatory_2](https://github.com/ahanna334/password-purgatory/blob/main/example_mobile.jpg)
