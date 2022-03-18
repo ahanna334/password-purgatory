@@ -27,7 +27,7 @@ ctx.beginPath();
 
 var canvas = document.getElementById("myCanvas");
 var ctx = canvas.getContext("2d");
-ctx.font = "15px myFont";
+ctx.font = "14px";
 ctx.fillStyle = "white";
 ctx.fillText(result, 10, 50);
 }
