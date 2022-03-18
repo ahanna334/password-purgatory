@@ -1,10 +1,39 @@
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+
+<canvas id="myCanvas" width="800" height="100">
+    Your browser does not support the canvas element.
+</canvas>
 <html>
-  <head>
+<head>
+    <link rel="preload" href="./Flame.ttf" type="font/ttf" as="font" crossOrigin="anonymous" />
     <script src="make-hell.js"></script>
-  </head>
-  <body style="height: 100vh; background-image: url('logo.jpg'); background-position: center; background-repeat: no-repeat; background-color: black;">
-    <input autocapitalize="off" autocorrect="off" id="Password" name="Password" placeholder="password" spellcheck="false" type="password" />
-    <button type="submit" id="searchPwnedPasswords">make hell</button>
-    <h1>API Documentation</h1>
-  </body>
+</head>
+<body style="height: 100vh; background-image: url('logo.jpg'); background-size: cover; background-size: contain; background-position: center; background-repeat: no-repeat; background-color: black;">
+    <p align="center">
+        <input autocapitalize="off" autocorrect="off" id="Password" name="Password" placeholder="password" spellcheck="false" type="password" />
+        <button onclick="myFunction()" type="submit" id="searchPwnedPasswords">make hell</button>
+    </p>
+</body>
 </html>
+
+<style>
+    @font-face {
+        font-family: 'myFont';
+        src: url('Flame.ttf');
+    }
+
+    #myCanvas {
+        width: 100%;
+        display: block;
+        margin: 0 auto;
+    }
+
+    button {
+        background-color: #ef6b13;
+        font-weight: bold;
+    }
+    input, button {
+        bottom: 30px;
+        position: relative;
+    }
+</style>
