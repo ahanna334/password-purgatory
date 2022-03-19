@@ -1,4 +1,6 @@
 # password-purgatory
+https://www.troyhunt.com/building-password-purgatory-with-cloudflare-pages-and-workers/
+
 Deliberately making password creation hell
 
 Contributions welcome! Here's what needs to be done:
