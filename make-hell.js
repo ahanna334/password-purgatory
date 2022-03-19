@@ -4,31 +4,43 @@ This script should be embedable in an external page on another site (such as tro
 an easy drop-in solution.
 */
 
+var clicks = 0;
 function myFunction() {
-var data = document.getElementById("password").value;
-const Http = new XMLHttpRequest();
-const url='https://api.passwordpurgatory.com/make-hell?password=' + data;
-console.log(url)
-Http.open("GET", url);
-Http.send();
 
-Http.onreadystatechange = (e) => {
-console.log(Http.responseText)
+    clicks += 1;
+    document.getElementById("clicks").innerHTML = clicks;
+    console.log(clicks);
 
-var str = (Http.responseText);
-var result = str.split(': "').pop().split('"')[0];
-console.log(result)
+    if (clicks == 12) {
+        window.location.replace('./success/success.html');
+    }
 
-var canvas = document.getElementById("myCanvas");
-var ctx = canvas.getContext("2d");
-ctx.clearRect(0, 0, canvas.width, canvas.height);
-ctx.beginPath();
+    else {
+        var data = document.getElementById("password").value;
+        const Http = new XMLHttpRequest();
+        const url = 'https://api.passwordpurgatory.com/make-hell?password=' + data;
+        console.log(url)
+        Http.open("GET", url);
+        Http.send();
+
+        Http.onreadystatechange = (e) => {
+            console.log(Http.responseText)
+
+            var str = (Http.responseText);
+            var result = str.split(': "').pop().split('"')[0];
+            console.log(result)
+
+            var canvas = document.getElementById("myCanvas");
+            var ctx = canvas.getContext("2d");
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            ctx.beginPath();
 
 
-var canvas = document.getElementById("myCanvas");
-var ctx = canvas.getContext("2d");
-ctx.font = "14px";
-ctx.fillStyle = "white";
-ctx.fillText(result, 10, 50);
-}
+            var canvas = document.getElementById("myCanvas");
+            var ctx = canvas.getContext("2d");
+            ctx.font = "14px";
+            ctx.fillStyle = "white";
+            ctx.fillText(result, 10, 50);
+        }
+    }
 }
