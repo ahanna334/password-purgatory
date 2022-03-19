@@ -11,3 +11,11 @@ Contributions welcome! Here's what needs to be done:
 ![purgatory_1](https://github.com/ahanna334/password-purgatory/blob/main/example_1.png)
 
 ![purgatory_2](https://github.com/ahanna334/password-purgatory/blob/main/example_mobile.jpg)
+
+After 12 attempts, the user is greeted with this message:
+
+![purgatory_2](https://github.com/ahanna334/password-purgatory/blob/main/success.png)
+
+Followed by this message:
+
+![purgatory_3](https://github.com/ahanna334/password-purgatory/blob/main/error.png)
