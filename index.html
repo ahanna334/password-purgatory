@@ -1,107 +1,115 @@
+<!DOCTYPE html>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
 <script src="make-hell.js"></script>
-<div class="box">
-  <h2>Purgatory</h2>
-  <form onsubmit="return false">
-    <canvas id="myCanvas" width="800" height="100">
-    Your browser does not support the canvas element.
-</canvas>
-    <div class="inputBox">
-      <input type="password" name="password" id="password" required value=""
-             />
-      <label>Password</label>
+<html lang="en">
+<body>
+    <div class="box">
+        <h2>Purgatory</h2>
+        <form onsubmit="return false">
+            <canvas id="myCanvas" width="800" height="100">
+                Your browser does not support the canvas element.
+            </canvas>
+            <div class="inputBox">
+                <input type="password" name="password" id="password" required value="" />
+                <label>Password</label>
+            </div>
+            <input type="submit" id="clicks" name="sign-in" value="Make Hell" onclick="myFunction()" />
+        </form>
     </div>
-    <input type="submit" id="clicks" name="sign-in" value="Make Hell" onclick="myFunction()"/>
-  </form>
-</div>
+</body>
+</html>
 
 <style>
-#myCanvas{
-font-weight: bolder;
-}
-body {
-  margin: 0;
-  padding: 0;
-  padding-top: 20%;
-  background: url(https://github.com/ahanna334/password-purgatory/blob/main/logo.jpg?raw=true);
-  background-size: 100%; 
-  background-position: center; 
-  background-repeat: no-repeat;
-  background-color: black;
-  font-family: sans-serif;
-}
+    #myCanvas {
+        font-weight: bolder;
+    }
 
-.box {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 25rem;
-  padding: 2.5rem;
-  box-sizing: border-box;
-  background: rgba(0, 0, 0, 0.6);
-  border-radius: 0.625rem;
-}
+    body {
+        margin: 0;
+        padding: 0;
+        padding-top: 20%;
+        background: url(https://github.com/ahanna334/password-purgatory/blob/main/logo.jpg?raw=true);
+        background-size: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-color: black;
+        font-family: sans-serif;
+    }
 
-.box h2 {
-  margin: 0 0 1.875rem;
-  padding: 0;
-  color: #fff;
-  text-align: center;
-}
+    .box {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 25rem;
+        padding: 2.5rem;
+        box-sizing: border-box;
+        background: rgba(0, 0, 0, 0.6);
+        border-radius: 0.625rem;
+    }
 
-.box .inputBox {
-  position: relative;
-}
+        .box h2 {
+            margin: 0 0 1.875rem;
+            padding: 0;
+            color: #fff;
+            text-align: center;
+        }
 
-.box .inputBox input {
-  width: 100%;
-  padding: 0.625rem 0;
-  font-size: 1rem;
-  color: #fff;
-  letter-spacing: 0.062rem;
-  margin-bottom: 1.875rem;
-  border: none;
-  border-bottom: 0.065rem solid #fff;
-  outline: none;
-  background: transparent;
-}
+        .box .inputBox {
+            position: relative;
+        }
 
-.box .inputBox label {
-  position: absolute;
-  top: 0;
-  left: 0;
-  padding: 0.625rem 0;
-  font-size: 1rem;
-  color: #fff;
-  pointer-events: none;
-  transition: 0.5s;
-}
+            .box .inputBox input {
+                width: 100%;
+                padding: 0.625rem 0;
+                font-size: 1rem;
+                color: #fff;
+                letter-spacing: 0.062rem;
+                margin-bottom: 1.875rem;
+                border: none;
+                border-bottom: 0.065rem solid #fff;
+                outline: none;
+                background: transparent;
+            }
 
-.box .inputBox input:focus ~ label,
-.box .inputBox input:valid ~ label,
-.box .inputBox input:not([value=""]) ~ label {
-  top: -1.125rem;
-  left: 0;
-  color: white;
-  font-weight: bolder;
-  font-size: 0.75rem;
-}
+            .box .inputBox label {
+                position: absolute;
+                top: 0;
+                left: 0;
+                padding: 0.625rem 0;
+                font-size: 1rem;
+                color: #fff;
+                pointer-events: none;
+                transition: 0.5s;
+            }
 
-.box input[type="submit"] {
-  border: none;
-  outline: none;
-  color: #fff;
-  background-color: #ef6b13;
-  padding: 0.625rem 1.25rem;
-  cursor: pointer;
-  border-radius: 0.312rem;
-  font-size: 1rem;
-}
+            .box .inputBox input:focus ~ label,
+            .box .inputBox input:valid ~ label,
+            .box .inputBox input:not([value=""]) ~ label {
+                top: -1.125rem;
+                left: 0;
+                color: white;
+                font-weight: bolder;
+                font-size: 0.75rem;
+            }
 
-.box input[type="submit"]:hover {
-  background-color: white;
-  color: #ef6b13;
-}
+        .box input[type="submit"] {
+            border: none;
+            outline: none;
+            color: #fff;
+            background-color: #ef6b13;
+            padding: 0.625rem 1.25rem;
+            cursor: pointer;
+            border-radius: 0.312rem;
+            font-size: 1rem;
+        }
 
+            .box input[type="submit"]:hover {
+                background-color: white;
+                color: #ef6b13;
+            }
+
+    html, body {
+        height: 100%
+    }
 </style>
