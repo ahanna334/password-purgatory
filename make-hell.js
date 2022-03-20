@@ -24,11 +24,18 @@ function myFunction() {
         Http.send();
 
         Http.onreadystatechange = (e) => {
-            console.log(Http.responseText)
+            if (Http.readyState == 4) {
+                if (Http.status === 200) {
+                    console.log(Http.responseText)
+                    var str = (Http.responseText);
+                    var result = str.split(': "').pop().split('"')[0];
+                    console.log(result)
+                } else {
+                    console.log('No success');
+                }
+            }
 
-            var str = (Http.responseText);
-            var result = str.split(': "').pop().split('"')[0];
-            console.log(result)
+
 
             var canvas = document.getElementById("myCanvas");
             var ctx = canvas.getContext("2d");
