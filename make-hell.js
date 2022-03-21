@@ -47,7 +47,7 @@ function myFunction() {
             var ctx = canvas.getContext("2d");
             ctx.font = "14px";
             ctx.fillStyle = "white";
-            ctx.fillText(result, 10, 50);
+            ctx.fillText(result, 0, 50);
         }
     }
 }
